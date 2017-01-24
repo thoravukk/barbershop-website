@@ -1,7 +1,7 @@
 # Barbershop
 This is the first website that I made for a student project.
 
-## Notes
+## TODO List
 1. **Index**:
     1. Markup
     2. Styles
