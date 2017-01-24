@@ -37,68 +37,58 @@
                 </section>
                 <!--Фильтр-->
                 <aside class="filter">
-                    <form action="/" class="filter__brands">
-                        <h3>Производители:</h3>
-                        <ul class="filter__menu">
-                            <li class="filter__item"><input type="checkbox" name="Производитель" value="Baxter of California" checked>Baxter of California</li>
-                            <li class="filter__item"><input type="checkbox" name="Производитель" value="Mr. Natty">Mr. Natty</li>
-                            <li class="filter__item"><input type="checkbox" name="Производитель" value="Suavecito" checked>Suavecito</li>
-                            <li class="filter__item"><input type="checkbox" name="Производитель" value="Malin+Goetz">Malin+Goetz</li>
-                            <li class="filter__item"><input type="checkbox" name="Производитель" value="Murray's">Murray's</li>
-                            <li class="filter__item"><input type="checkbox" name="Производитель" value="American Crew" checked>American Crew</li>
-                        </ul>
+                    <form action="/">
+                        <fieldset class="filter__brands">
+                            <legend>Производители:</legend>
+                            <label class="filter__item"><input type="checkbox" name="Производитель" value="Baxter of California" checked>Baxter of California</label>
+                            <label class="filter__item"><input type="checkbox" name="Производитель" value="Mr. Natty">Mr. Natty</label>
+                            <label class="filter__item"><input type="checkbox" name="Производитель" value="Suavecito" checked>Suavecito</label>
+                            <label class="filter__item"><input type="checkbox" name="Производитель" value="Malin+Goetz">Malin+Goetz</label>
+                            <label class="filter__item"><input type="checkbox" name="Производитель" value="Murray's">Murray's</label>
+                            <label class="filter__item"><input type="checkbox" name="Производитель" value="American Crew" checked>American Crew</label>
+                        </fieldset>
+                        <fieldset class="filter__products">
+                            <legend>Группы товаров:</legend>
+                            <label class="filter__item"><input type="radio" name="Группа" value="Бритвенные принадлежности">Бритвенные принадлежности</label>
+                            <label class="filter__item"><input type="radio" name="Группа" value="Средства для ухода" checked>Средства для ухода</label>
+                            <label class="filter__item"><input type="radio" name="Группа" value="Аксессуары">Аксессуары</label>
+                        </fieldset>
+                        <button class="filter__button" type="submit">Показать</button>
                     </form>
-                    <form action="/" class="filter__products">
-                        <h3>Группы товаров</h3>
-                        <ul class="filter__menu">
-                            <li class="filter__item"><input type="radio" name="Группа" value="Бритвенные принадлежности">Бритвенные принадлежности</li>
-                            <li class="filter__item"><input type="radio" name="Группа" value="Средства для ухода" checked>Средства для ухода</li>
-                            <li class="filter__item"><input type="radio" name="Группа" value="Аксессуары">Аксессуары</li>
-                        </ul>
-                    </form>
-                    <div class="filter__button">
-                        <a href="#">Показать</a>
-                    </div>
                 </aside>
                 <!--Продукты-->
                 <section class="products">
                     <div class="products__item">
-                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/1.jpg"></a></div>
-                        <span class="products__category">Набор для путешествий</span>
-                        <p class="products__title">«Baxter of California»</p>
-                        <div class="products__button"><span class="products__price">2 900 руб.</span><a href="#">Купить</a></div>
+                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/1.jpg" alt="Baxter of California"></a></div>
+                        <div class="products__info"><a href="#"><span class="products__category">Набор для путешествий</span><span class="products__title">«Baxter of California»</span></a></div>
+                        <div class="products__purchase"><span class="products__price">2 900 руб.</span><a href="#" class="products__button">Купить</a></div>
                     </div>
                     <div class="products__item">
-                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/2.jpg"></a></div>
-                        <span class="products__category">Увлажняющий кондиционер</span>
-                        <p class="products__title">«Baxter of California»</p>
-                        <div class="products__button"><span class="products__price">750 руб.</span><a href="#">Купить</a></div>
+                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/2.jpg" alt="Baxter of California"></a></div>
+                        <div class="products__info"><a href="#"><span class="products__category">Увлажняющий кондиционер</span><span class="products__title">«Baxter of California»</span></a></div>
+                        <div class="products__purchase"><span class="products__price">750 руб.</span><a href="#" class="products__button">Купить</a></div>
                     </div>
                     <div class="products__item">
-                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/3.jpg"></a></div>
-                        <span class="products__category">Гель для волос</span>
-                        <p class="products__title">«Suavecito»</p>
-                        <div class="products__button"><span class="products__price">290 руб.</span><a href="#">Купить</a></div>
+                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/3.jpg" alt="Suavecito"></a></div>
+                        <div class="products__info"><a href="#"><span class="products__category">Гель для волос</span><span class="products__title">«Suavecito»</span></a></div>
+                        <div class="products__purchase"><span class="products__price">290 руб.</span><a href="#" class="products__button">Купить</a></div>
                     </div>
                     <div class="products__item">
-                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/4.jpg"></a></div>
-                        <span class="products__category">Глина для укладки волос</span>
-                        <p class="products__title">«American Crew»</p>
-                        <div class="products__button"><span class="products__price">500 руб.</span><a href="#">Купить</a></div>
+                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/4.jpg" alt="American Crew"></a></div>
+                        <div class="products__info"><a href="#"><span class="products__category">Глина для укладки волос</span><span class="products__title">«American Crew»</span></a></div>
+                        <div class="products__purchase"><span class="products__price">500 руб.</span><a href="#" class="products__button">Купить</a></div>
                     </div>
                     <div class="products__item">
-                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/5.jpg"></a></div>
-                        <span class="products__category">Гель для волос</span>
-                        <p class="products__title">«American Crew»</p>
-                        <div class="products__button"><span class="products__price">300 руб.</span><a href="#">Купить</a></div>
+                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/5.jpg" alt="American Crew"></a></div>
+                        <div class="products__info"><a href="#"><span class="products__category">Гель для волос</span><span class="products__title">«American Crew»</span></a></div>
+                        <div class="products__purchase"><span class="products__price">300 руб.</span><a href="#" class="products__button">Купить</a></div>
                     </div>
                     <div class="products__item">
-                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/6.jpg"></a></div>
-                        <span class="products__category">Набор для бритья</span>
-                        <p class="products__title">«Baxter of California»</p>
-                        <div class="products__button"><span class="products__price">3 900 руб.</span><a href="#">Купить</a></div>
+                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/6.jpg" alt="Baxter of California"></a></div>
+                        <div class="products__info"><a href="#"><span class="products__category">Набор для бритья</span><span class="products__title">«Baxter of California»</span></a></div>
+                        <div class="products__purchase"><span class="products__price">3 900 руб.</span><a href="#" class="products__button">Купить</a></div>
                     </div>
-                    <div class="products__switcher">
+                    <div class="products__navigation">
                         <div class="products__button"><a href="#">1</a></div>
                         <div class="products__button products__button_focused"><a href="#">2</a></div>
                         <div class="products__button"><a href="#">3</a></div>
