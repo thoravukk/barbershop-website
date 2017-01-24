@@ -24,20 +24,20 @@
                 </nav>                
             </div>
         </header>
-        <main>
-            <div class="container">
-                <!--Подменю-->
-                <section class="breadcrumbs">
-                    <h1>Средства для ухода</h1>
-                    <ul class="breadcrumbs__menu">
-                        <li class="breadcrumbs__item"><a href="#">Главная</a></li>
-                        <li class="breadcrumbs__item"><a href="#">Магазин</a></li>
-                        <li class="breadcrumbs__item breadcrumbs__item_focused"><a href="#">Средства для ухода</a></li>
-                    </ul>
-                </section>
+        <main class="container">
+            <!--Подменю-->
+            <section class="breadcrumbs">
+                <h1>Средства для ухода</h1>
+                <ul class="breadcrumbs__menu">
+                    <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                    <li class="breadcrumbs__item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__item_focused"><a href="#">Средства для ухода</a></li>
+                </ul>
+            </section>
+            <div class="catalog">
                 <!--Фильтр-->
                 <aside class="filter">
-                    <form action="/">
+                    <form action="#" method="POST">
                         <fieldset class="filter__brands">
                             <legend>Производители:</legend>
                             <label class="filter__item"><input type="checkbox" name="Производитель" value="Baxter of California" checked>Baxter of California</label>
@@ -74,7 +74,7 @@
                         <div class="products__purchase"><span class="products__price">290 руб.</span><a href="#" class="products__button">Купить</a></div>
                     </div>
                     <div class="products__item">
-                        <div class="products__image"><a href="#"><img src="assets/img/shop/items/4.jpg" alt="American Crew"></a></div>
+                         <div class="products__image"><a href="#"><img src="assets/img/shop/items/4.jpg" alt="American Crew"></a></div>
                         <div class="products__info"><a href="#"><span class="products__category">Глина для укладки волос</span><span class="products__title">«American Crew»</span></a></div>
                         <div class="products__purchase"><span class="products__price">500 руб.</span><a href="#" class="products__button">Купить</a></div>
                     </div>
@@ -88,19 +88,22 @@
                         <div class="products__info"><a href="#"><span class="products__category">Набор для бритья</span><span class="products__title">«Baxter of California»</span></a></div>
                         <div class="products__purchase"><span class="products__price">3 900 руб.</span><a href="#" class="products__button">Купить</a></div>
                     </div>
-                    <div class="products__navigation">
-                        <div class="products__button"><a href="#">1</a></div>
-                        <div class="products__button products__button_focused"><a href="#">2</a></div>
-                        <div class="products__button"><a href="#">3</a></div>
-                        <div class="products__button"><a href="#">4</a></div>
-                    </div>                    
                 </section>
+                <!--Список страниц-->
+                <div class="pagination">
+                    <ul class="pagination__menu">
+                        <li class="pagination__button"><a href="#">1</a></li>
+                        <li class="pagination__button pagination__button_focused"><a href="#">2</a></li>
+                        <li class="pagination__button"><a href="#">3</a></li>
+                        <li class="pagination__button"><a href="#">4</a></li>
+                    </ul>
+                </div>                    
             </div>
         </main>
         <footer class="footer">
             <div class="container">
                 <!--Контакты-->
-                <div class="contacts">
+                <div class="footer__contacts">
                     <p>
                         Барбершоп «Бородинский»<br>
                         Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -109,16 +112,16 @@
                     </p>
                 </div>
                 <!--Социальные сети-->
-                <div class="share">
+                <div class="footer__share">
                     <p>Давайте дружить!</p>
-                    <div class="share__button share__button_vkontakte"><a href="#">ВКонтакте</a></div>
-                    <div class="share__button share__button_facebook"><a href="#">Фейсбук</a></div>
-                    <div class="share__button share__button_instagram"><a href="#">Инстаграм</a></div>
+                    <div class="footer__button footer__button_vkontakte"><a href="#">ВКонтакте</a></div>
+                    <div class="footer__button footer__button_facebook"><a href="#">Фейсбук</a></div>
+                    <div class="footer__button footer__button_instagram"><a href="#">Инстаграм</a></div>
                 </div>
                 <!--Копирайт-->
-                <div class="copyright">
+                <div class="footer__copyright">
                     <p>Разработано:</p>
-                    <div class="copyright__button"><a href="#">HTML Academy</a></div>
+                    <div class="footer__button"><a href="#">HTML Academy</a></div>
                 </div>
             </div>
         </footer>
